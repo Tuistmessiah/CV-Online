@@ -1,0 +1,66 @@
+.bars {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bar-skill  {
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  font-size: $default-font-size;
+  color: $color-grey-dark-3 ;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+
+  &::before{
+    content:  attr(data-skill);
+    background-color: #b0beff;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+
+  &.js::before{
+    background-color: #ffd92e;
+  }
+  &.html::before{
+    background-color: #ffa33a;
+  }
+  &.react::before{
+    background-color: #3abdff;
+  }
+  &.angular::before{
+    background-color: #ff4242;
+  }
+  &.css::before{
+    background-color: #b342ff;
+  }
+  
+  &.qty20::before{
+    width: calc(20% - 10px);
+  }
+  &.qty30::before{
+    width: calc(30% - 10px);
+  }
+  &.qty40::before{
+    width: calc(40% - 10px);
+  }
+  &.qty50::before{
+    width: calc(50% - 10px);
+  }
+  &.qty60::before{
+    width: calc(60% - 10px);
+  }
+  &.qty70::before{
+    width: calc(70% - 10px);
+  }
+
+}
+
+
+
