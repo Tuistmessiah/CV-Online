@@ -6,6 +6,19 @@ body {
     color: $color-grey-dark-3;
 }
 
+// ---- Coloring
+.color-white {
+    color: white;
+}
+.color-prim {
+    color: $color-primary;
+}
+.no-decor {
+    text-decoration: none;
+}
+
+// ----- Headings
+
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
