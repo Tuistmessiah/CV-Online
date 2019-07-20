@@ -20,7 +20,8 @@
         @include absCenter;
 
         width: 75%;
-        background-color: $color-white;
+        background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+        // background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
         display: table;
@@ -31,15 +32,15 @@
     }
 
     &__left {
-        width: 33.333333%;
+        width: 50%;
         display: table-cell;
     }
 
     &__right {
-        width: 66.6666667%;
+        width: 50%;
         display: table-cell;
-        vertical-align: middle;
-        padding: 3rem 5rem;
+        // vertical-align: middle;
+        // padding: 3rem 5rem;
     }
 
     &__img {

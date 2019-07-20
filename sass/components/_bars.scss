@@ -13,6 +13,14 @@
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 
+  &-neg {
+    background-color: #111;
+  }
+
+  &-text-neg {
+    color: $color-grey-light-1;
+  }
+
   &::before{
     content:  attr(data-skill);
     background-color: #b0beff;
@@ -25,6 +33,12 @@
     -o-animation: load 2s 0s;
   }
 
+  &:hover {
+    transform: scaleX(1.05) scaleY(1.05);
+    transition: all .2s;
+  }
+
+  // Main Skills
   &.js::before{
     background-color: #ffd92e;
   }
@@ -40,7 +54,42 @@
   &.css::before{
     background-color: #b342ff;
   }
-  
+  // Other Skills
+  &.sql::before{
+    background-color: #a9e7ff;
+  }
+  &.cpp::before{
+    background-color: #a1b3ff;
+  }
+  &.unity::before{
+    background-color: #ffffff;
+  }
+  &.blender::before{
+    background-color: #ffc186;
+  }
+  &.node::before{
+    background-color: #94ffa6;
+  }
+  &.scrum::before{
+    background-color: #bfbbff;
+  }
+  // Languages
+  &.portuguese::before{
+    background-color: #75fb8b;
+  }
+  &.english::before{
+    background-color: #fb4747;
+  }
+  &.french::before{
+    background-color: #2848ff;
+  }
+  &.spanish::before{
+    background-color: #fbff23;
+  }
+  &.german::before{
+    background-color: #4e5546;
+  }
+
   &.qty20::before{
     width: calc(20% - 10px);
   }
@@ -58,6 +107,15 @@
   }
   &.qty70::before{
     width: calc(70% - 10px);
+  }
+  &.qty80::before{
+    width: calc(80% - 10px);
+  }
+  &.qty90::before{
+    width: calc(90% - 10px);
+  }
+  &.qty100::before{
+    width: calc(100% - 10px);
   }
 
 }
