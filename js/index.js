@@ -1,10 +1,4 @@
-// ---- Sliding Tabs
-$('.slide a').click(function () {
-  $('.slide.active').removeClass('active');
-  $(this).closest('.slide').addClass('active');
-  return false;
-});
-
+// ----- Accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
 
