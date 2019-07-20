@@ -15,6 +15,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+@import url(http://fonts.googleapis.com/css?family=Lato:300|Oswald);
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -97,6 +98,12 @@ body {
   line-height: 1.7;
   color: #333; }
 
+.font-normal {
+  font-size: 1.6rem; }
+
+.font-big {
+  font-size: 3.2rem; }
+
 .color-white {
   color: white; }
 
@@ -136,6 +143,8 @@ body {
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: .5rem; } }
+  .heading-primary-neg {
+    background-image: linear-gradient(to right, #f9d342, #fbe177); }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -160,6 +169,8 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
+  .heading-tertiary-neg {
+    color: #292826; }
 
 .heading-quaternary {
   font-size: 1.6rem;
@@ -198,6 +209,9 @@ body {
     height: 40rem; }
   .imgs-xbig {
     height: 70rem; }
+  .imgs-center {
+    left: 50%;
+    transform: translateX(-50%); }
 
 .u-center-text {
   text-align: center !important; }
@@ -350,10 +364,10 @@ body {
   .btn--white::after {
     background-color: #fff; }
 
-.btn--green {
+.btn--neg {
   background-color: #f9d342;
-  color: #fff; }
-  .btn--green::after {
+  color: #f9d342; }
+  .btn--neg::after {
     background-color: #f9d342; }
 
 .btn::after {
@@ -389,6 +403,25 @@ body {
 
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+.btn-text-neg:link, .btn-text-neg:visited {
+  font-size: 1.6rem;
+  color: #292826;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #292826;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text-neg:hover {
+  background-color: #292826;
+  color: #f9d342;
+  box-shadow: 0 1rem 2rem rgba(249, 211, 66, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text-neg:active {
+  box-shadow: 0 0.5rem 1rem rgba(249, 211, 66, 0.15);
   transform: translateY(0); }
 
 .card {
@@ -1130,17 +1163,17 @@ body {
     .section-about {
       padding: 20rem 0; } }
 
-.section-features {
+.section-activities {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(251, 225, 119, 0.8), rgba(255, 174, 23, 0.8)), url(../img/nat-4.jpg);
   background-size: cover; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    .section-features {
+    .section-activities {
       -webkit-clip-path: polygon(5% 10%, 95% 10%, 95% 80%, 75% 80%, 75% 90%, 50% 80%, 5% 80%);
       clip-path: polygon(5% 10%, 95% 10%, 95% 80%, 75% 80%, 75% 90%, 50% 80%, 5% 80%);
       height: 95vh; } }
   @media only screen and (max-width: 56.25em) {
-    .section-features {
+    .section-activities {
       padding: 10rem 0; } }
 
 .section-skills {
@@ -1153,20 +1186,28 @@ body {
     margin-top: .5rem;
     margin-left: 8rem; }
 
-.section-exp {
+.section-experience {
   margin-top: 0vh;
   height: 200vh;
   padding: 5rem 0;
   background-image: linear-gradient(to right bottom, rgba(251, 225, 119, 0.8), rgba(255, 174, 23, 0.8)), url(../img/nat-4.jpg);
   background-size: cover; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    .section-exp {
+    .section-experience {
       -webkit-clip-path: polygon(41% 0, 95% 21%, 93% 95%, 46% 100%, 10% 95%, 6% 84%, 4% 21%);
       clip-path: polygon(41% 0, 95% 21%, 93% 95%, 46% 100%, 10% 95%, 6% 84%, 4% 21%);
       height: 110vh; } }
   @media only screen and (max-width: 56.25em) {
-    .section-exp {
+    .section-experience {
       padding: 10rem 0; } }
+
+.section-projects {
+  height: 100vh;
+  margin-top: 0vh;
+  color: #fbe177; }
+  @media only screen and (max-width: 56.25em) {
+    .section-projects {
+      padding: 20rem 0; } }
 
 .section-tours {
   background-color: #ececec;
@@ -1982,3 +2023,79 @@ body {
     border-color: #e08833 !important; }
   .c100.orange.dark:hover > span {
     color: #e08833; }
+
+.slides {
+  position: relative; }
+  .slides .slide {
+    position: absolute;
+    top: 0;
+    width: calc(33% - 5em);
+    max-height: 5em;
+    margin: 0.5em;
+    padding: 1em;
+    background: #f9d342;
+    color: #292826;
+    float: left;
+    overflow: hidden;
+    transition: max-height 0.25s       ease-in-out, width      0.25s 0.25s ease-in-out, left       0.25s 0.5s  ease-in-out, top        0.25s 0.75s ease-in-out; }
+    .slides .slide:nth-child(1) {
+      left: 0%; }
+    .slides .slide:nth-child(2) {
+      left: 33.3333%; }
+    .slides .slide:nth-child(3) {
+      left: 66.6666%; }
+    .slides .slide > a {
+      display: block;
+      padding-bottom: 1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #292826;
+      transition: color 2s; }
+    .slides .slide-text {
+      height: 50%; }
+  .slides .slide.active {
+    position: absolute;
+    top: 8em;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-height: 150vh;
+    float: none;
+    transition: top        0.25s 1s    ease-in-out, left       0.25s 1.25s ease-in-out, width      0.25s 1.5s  ease-in-out, max-height 0.25s 1.75s ease-in-out; }
+    .slides .slide.active a {
+      color: #0f0f0e; }
+
+/** PAGE STYLES **/
+.container-tab {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before, .slides:before,
+.cf:after,
+.slides:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+
+.cf:after,
+.slides:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf, .slides {
+  *zoom: 1; }
