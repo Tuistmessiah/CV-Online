@@ -96,38 +96,6 @@
   }
 }
 
-/** PAGE STYLES **/
-@import url(http://fonts.googleapis.com/css?family=Lato:300|Oswald);
-
-// *, *:before, *:after { @include box-sizing(border-box); }
-
-// html, body { width: 100%; height: 100%; }
-
-// html { font-size: 62.5%; }
-
-// body {
-//   background: $color-primary;
-//   font-family: 'Lato', sans-serif;
-//   font-size: 2em; 
-//   line-height: 1.5
-// }
-
-.container-tab {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-// h1 {
-//   margin: 0;
-//   padding: 1em;
-//   font-family: 'Oswald', sans-serif;
-//   font-size: 2em;
-//   text-transform: uppercase;
-//   text-align: center;
-//   color: lighten(hsl(120, 70, 70), 30%);
-// }
-
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
