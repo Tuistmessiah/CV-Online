@@ -7,6 +7,7 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/bars";
 @import "components/bg-video";
 @import "components/button";
 @import "components/card";
@@ -14,6 +15,7 @@
 @import "components/feature-box";
 @import "components/form";
 @import "components/popup";
+@import "components/presentation";
 @import "components/story";
 
 @import "layout/footer";
@@ -23,3 +25,5 @@
 
 @import "pages/home";
 
+@import "vendors/circle";
+@import "vendors/sliding-tab";
