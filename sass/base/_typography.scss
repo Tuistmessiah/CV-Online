@@ -124,9 +124,10 @@ body {
 .paragraph {
     font-size: $default-font-size;
     // text-align: justify;
-    &:not(:last-child) {
-        margin-bottom: 1.5rem;
-    }
+    margin-bottom: 1.5rem;
+    // &:not(:last-child) {
+        
+    // }
 }
 
 // ----- Icons
@@ -150,7 +151,7 @@ body {
 
 // ----- Images
 .imgs {
-    display: block;
+    display: inline;
     margin-left: auto;
     margin-right: auto;
 
@@ -165,7 +166,11 @@ body {
         height: 20rem;
     }
     &-big {
-        height: 40rem;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 100%;
     }
     &-xbig {
         height: 70rem;

@@ -1,11 +1,12 @@
 .footer {
     background-color: $color-grey-dark-3;
-    padding: 10rem 0;
+    margin-top: 5rem;
+    padding: 5rem 5rem 6rem 5rem;
     font-size: 1.4rem;
     color: $color-grey-light-1;
 
     @include respond(tab-port) {
-        padding: 8rem 0;
+        padding: 3rem 3rem 5rem 3rem;
     }
 
     &__logo-box {
@@ -50,10 +51,14 @@
         &:visited {
             color: $color-grey-light-1;
             background-color: $color-grey-dark-3;
-            text-decoration: none;
+            text-decoration: underline;
             text-transform: uppercase;
             display: inline-block;
             transition: all .2s;
+
+            @include respond(tab-port) {
+                color: $color-primary-light;
+            }
         }
 
         &:hover,

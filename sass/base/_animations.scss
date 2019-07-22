@@ -46,21 +46,26 @@
 // Bars Loadind
 @keyframes load{
     from {
-      width: 0%
+      // width: 0%
+      max-width:0%;
+      width:100%;
     }
   }
   @-webkit-keyframes load{
     from {
-      width: 0%
+      max-width:0%;
+      width:100%;
     }
   }
   @-moz-keyframes load{
     from {
-      width: 0%
+      max-width:0%;
+      width:100%;
     }
   }
   @-o-keyframes load{
     from {
-      width: 0%
+      max-width:0%;
+      width:100%;
     }
   }
