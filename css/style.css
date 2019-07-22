@@ -797,6 +797,7 @@ body {
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5rem;
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
@@ -993,6 +994,30 @@ body {
       width: 100%;
       padding: 4rem;
       padding-left: 7rem; } }
+  .presentation__text {
+    display: block; }
+  .presentation__header {
+    font-size: 4rem;
+    padding-right: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, #292826, #5d5950);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s; }
+    @media only screen and (max-width: 75em) {
+      .presentation__header {
+        font-size: 3.2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .presentation__header {
+        font-size: 3.5rem; } }
+    .presentation__header:hover {
+      transform: scale(1.01);
+      text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .presentation__header-neg {
+      background-image: linear-gradient(to right, #f8d032, #fbe177); }
   .presentation__shape {
     width: 30rem;
     height: 30rem;
@@ -1008,9 +1033,6 @@ body {
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         border-radius: none; } }
-    @media only screen and (max-width: 37.5em) {
-      .presentation__shape {
-        transform: translateX(-3rem); } }
   .presentation__img {
     height: 100%;
     transform: translateX(0rem) scale(1.4);
@@ -1200,7 +1222,8 @@ body {
     width: calc(3 * ((100% - 3 * 8rem) / 4) + 2 * 8rem); }
 
 .header {
-  height: 85vh;
+  padding-top: 10rem;
+  padding-bottom: 20rem;
   background-image: linear-gradient(to right bottom, rgba(248, 208, 50, 0.8), rgba(255, 174, 23, 0.8)), url(../img/bgHeader.jpg);
   background-size: cover;
   background-position: top;
@@ -1208,9 +1231,8 @@ body {
   color: #333; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 5% 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 70%, 5% 100%);
-      height: 95vh; } }
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 5% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 5% 100%); } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(251, 225, 119, 0.8), rgba(255, 174, 23, 0.8)), url(../img/bgHeader.jpg); } }
@@ -1373,7 +1395,7 @@ body {
 
 .section-activities {
   padding: 5rem 5rem 10rem 5rem;
-  margin: 8vh 5rem 0 5rem;
+  margin: 8vh 5rem 0rem 5rem;
   background-image: linear-gradient(to right bottom, rgba(251, 225, 119, 0.8), rgba(255, 174, 23, 0.8)), url(../img/bgActivities.jpg);
   background-size: cover; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
