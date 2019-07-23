@@ -499,9 +499,7 @@ body {
   .bar-skill.german::before {
     background-color: #4e5546; }
   .bar-skill.qty20::before {
-    width: calc(20% - 10px);
-    max-width: 0%;
-    width: 80%; }
+    width: calc(20% - 10px); }
   .bar-skill.qty30::before {
     width: calc(30% - 10px); }
   .bar-skill.qty40::before {
