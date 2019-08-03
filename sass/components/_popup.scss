@@ -20,12 +20,13 @@
         @include absCenter;
 
         width: 75%;
+        padding: 5rem 2rem;
         background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
         // background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
         display: table;
-        overflow: hidden;
+        // overflow: hidden;
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
@@ -34,13 +35,17 @@
     &__left {
         width: 50%;
         display: table-cell;
+        @include respond(tab-port) {
+            display: inline;
+        }
     }
 
     &__right {
         width: 50%;
         display: table-cell;
-        // vertical-align: middle;
-        // padding: 3rem 5rem;
+        @include respond(tab-port) {
+            display: inline;
+        }
     }
 
     &__img {

@@ -15,6 +15,16 @@
     //     left: 50%;
     // }
 }
+
+.pos-rel {
+    margin-top: 2rem;
+    height: 5rem;
+
+    &-icon {
+        vertical-align: middle;
+    }
+}
+
 .z-front {
     z-index: 10;
 }
@@ -112,3 +122,14 @@
 .u-margin-right-l     { margin-right: 10rem !important; }
 .u-margin-right-xl    { margin-right: 20rem !important; }
 .u-margin-right-xxl   { margin-right: 40rem !important; }
+
+// ----- Icons
+
+.u-scale {
+    transition: all .2s;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    &:hover {
+        font-size: 7em !important;
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}

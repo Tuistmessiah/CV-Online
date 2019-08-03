@@ -60,19 +60,20 @@
     background-color: #a9e7ff;
   }
   &.cpp::before{
-    background-color: #a1b3ff;
+    background-color: orangered;
+    ;
   }
   &.unity::before{
     background-color: #ffffff;
   }
   &.blender::before{
-    background-color: #ffc186;
+    background-color: orange;
   }
   &.node::before{
     background-color: #94ffa6;
   }
   &.scrum::before{
-    background-color: #bfbbff;
+    background-color: rgb(36, 36, 251);
   }
   // Languages
   &.portuguese::before{

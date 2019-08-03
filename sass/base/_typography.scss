@@ -34,6 +34,8 @@ body {
 .no-decor {
     text-decoration: none;
 }
+// ---- Coloring
+
 
 // ----- Headings
 
@@ -130,6 +132,10 @@ body {
     // }
 }
 
+.disclaimer {
+    font-size: $default-font-size * 0.8;
+}
+
 // ----- Icons
 .icons-primary {
     font-size: $default-font-size *2;
@@ -181,5 +187,28 @@ body {
         left: 50%;
         transform: translateX(-50%);
     }
+
+    // Features
+    &-border-xs {
+        border-radius: 1%;
+    }
+    &-border-s {
+        border-radius: 2%;
+    }
+    &-border-n {
+        border-radius: 4%;
+    }
+    &-border-l {
+        border-radius: 6%;
+    }
+    &-border-xl {
+        border-radius: 10%;
+    }
+
+    // Width
+    &-line-n {
+        border: 1px solid rgba(248, 209, 50, 0.554);
+    }
+
 }
 

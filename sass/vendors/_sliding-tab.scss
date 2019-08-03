@@ -15,10 +15,16 @@
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.accordion:hover {
   color: $color-primary;
-  // background-color: $color-secondary-dark;
   background-image: linear-gradient(to right, $color-secondary-dark, $color-secondary-light);
+}
+
+.active {
+  color: $color-primary;
+  background-image: linear-gradient(to right, $color-secondary-dark, $color-secondary-light);
+  transform: scale(1.01);
+  border: 1px solid $color-primary;
 }
 
 .panel {
