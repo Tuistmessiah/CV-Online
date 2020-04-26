@@ -952,6 +952,8 @@ body {
     transition: all 0.2s; }
   .bar-skill.js::before {
     background-color: #ffd92e; }
+  .bar-skill.ts::before {
+    background-color: #2242f8; }
   .bar-skill.html::before {
     background-color: #ffa33a; }
   .bar-skill.react::before {
