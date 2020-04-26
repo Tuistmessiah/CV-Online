@@ -457,11 +457,21 @@ body {
   margin-right: 40rem !important; }
 
 .u-scale {
-  transition: all .2s;
+  transition: all 0.2s;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-  .u-scale:hover {
+
+.u-scale-hover {
+  transition: all 0.2s;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .u-scale-hover:hover {
     font-size: 7em !important;
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.icon-color {
+  background-color: rgba(248, 208, 50, 0.15); }
+
+.svg-icons {
+  height: 20px; }
 
 .bars {
   max-width: 80%;
@@ -469,7 +479,7 @@ body {
   margin: 0 auto; }
 
 .bar-skill {
-  background-color: #EEE;
+  background-color: #eee;
   padding: 2px;
   border-radius: 15px;
   margin-bottom: 2rem;
@@ -493,7 +503,7 @@ body {
     -o-animation: load 2s 0s; }
   .bar-skill:hover {
     transform: scaleX(1.05) scaleY(1.05);
-    transition: all .2s; }
+    transition: all 0.2s; }
   .bar-skill.js::before {
     background-color: #ffd92e; }
   .bar-skill.html::before {
@@ -505,9 +515,9 @@ body {
   .bar-skill.css::before {
     background-color: #b342ff; }
   .bar-skill.sql::before {
-    background-color: #a9e7ff; }
+    background-color: #4cbbe7; }
   .bar-skill.cpp::before {
-    background-color: orangered; }
+    background-color: #1f8ec5; }
   .bar-skill.unity::before {
     background-color: #ffffff; }
   .bar-skill.blender::before {
@@ -526,6 +536,8 @@ body {
     background-color: #fbff23; }
   .bar-skill.german::before {
     background-color: #4e5546; }
+  .bar-skill.dutch::before {
+    background-color: #da9618; }
   .bar-skill.qty20::before {
     width: calc(20% - 10px); }
   .bar-skill.qty30::before {

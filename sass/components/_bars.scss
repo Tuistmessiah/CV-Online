@@ -1,16 +1,16 @@
 .bars {
-  max-width:80%;
-  width:100%;
+  max-width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
-.bar-skill  {
-  background-color: #EEE;
+.bar-skill {
+  background-color: #eee;
   padding: 2px;
   border-radius: 15px;
   margin-bottom: 2rem;
   font-size: $default-font-size;
-  color: $color-grey-dark-3 ;
+  color: $color-grey-dark-3;
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 
@@ -22,8 +22,8 @@
     color: $color-grey-light-1;
   }
 
-  &::before{
-    content:  attr(data-skill);
+  &::before {
+    content: attr(data-skill);
     background-color: #b0beff;
     display: inline-block;
     padding: 5px 0 5px 10px;
@@ -36,91 +36,89 @@
 
   &:hover {
     transform: scaleX(1.05) scaleY(1.05);
-    transition: all .2s;
+    transition: all 0.2s;
   }
 
   // Main Skills
-  &.js::before{
+  &.js::before {
     background-color: #ffd92e;
   }
-  &.html::before{
+  &.html::before {
     background-color: #ffa33a;
   }
-  &.react::before{
+  &.react::before {
     background-color: #3abdff;
   }
-  &.angular::before{
+  &.angular::before {
     background-color: #ff4242;
   }
-  &.css::before{
+  &.css::before {
     background-color: #b342ff;
   }
   // Other Skills
-  &.sql::before{
-    background-color: #a9e7ff;
+  &.sql::before {
+    background-color: #4cbbe7;
   }
-  &.cpp::before{
-    background-color: orangered;
-    ;
+  &.cpp::before {
+    background-color: #1f8ec5;
   }
-  &.unity::before{
+  &.unity::before {
     background-color: #ffffff;
   }
-  &.blender::before{
+  &.blender::before {
     background-color: orange;
   }
-  &.node::before{
+  &.node::before {
     background-color: #94ffa6;
   }
-  &.scrum::before{
+  &.scrum::before {
     background-color: rgb(36, 36, 251);
   }
   // Languages
-  &.portuguese::before{
+  &.portuguese::before {
     background-color: #75fb8b;
   }
-  &.english::before{
+  &.english::before {
     background-color: #fb4747;
   }
-  &.french::before{
+  &.french::before {
     background-color: #2848ff;
   }
-  &.spanish::before{
+  &.spanish::before {
     background-color: #fbff23;
   }
-  &.german::before{
+  &.german::before {
     background-color: #4e5546;
   }
+  &.dutch::before {
+    background-color: rgb(218, 150, 24);
+  }
 
-  &.qty20::before{
+  &.qty20::before {
     width: calc(20% - 10px);
   }
-  &.qty30::before{
+  &.qty30::before {
     width: calc(30% - 10px);
   }
-  &.qty40::before{
+  &.qty40::before {
     width: calc(40% - 10px);
   }
-  &.qty50::before{
+  &.qty50::before {
     width: calc(50% - 10px);
   }
-  &.qty60::before{
+  &.qty60::before {
     width: calc(60% - 10px);
   }
-  &.qty70::before{
+  &.qty70::before {
     width: calc(70% - 10px);
   }
-  &.qty80::before{
+  &.qty80::before {
     width: calc(80% - 10px);
   }
-  &.qty90::before{
+  &.qty90::before {
     width: calc(90% - 10px);
   }
-  &.qty100::before{
+  &.qty100::before {
     width: calc(100% - 10px);
   }
-
 }
-
-
-
