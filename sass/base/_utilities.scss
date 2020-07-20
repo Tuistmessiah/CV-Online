@@ -3,18 +3,20 @@
 }
 .pos-abs {
   position: absolute;
+}
 
-  // position: relative;
-  // left:50%;
-  // transform: translateX(-50%);
+.pos-center-horiz {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 
-  // &:before {
-  //     content: "";
-  //     position: absolute;
-  //     display: block;
-  //     top: 50%;
-  //     left: 50%;
-  // }
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+  }
 }
 
 .pos-rel {

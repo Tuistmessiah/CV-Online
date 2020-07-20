@@ -2,11 +2,15 @@
 
 .accordion {
   // background-color: $color-primary;
-  background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
-  color: $color-secondary; 
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary,
+    $color-primary-dark
+  );
+  color: $color-secondary;
   cursor: pointer;
   padding: 18px;
-  margin: .3rem 10%;
+  margin: 0.3rem 10%;
   width: 80%;
   border: none;
   text-align: left;
@@ -17,12 +21,20 @@
 
 .accordion:hover {
   color: $color-primary;
-  background-image: linear-gradient(to right, $color-secondary-dark, $color-secondary-light);
+  background-image: linear-gradient(
+    to right,
+    $color-secondary-dark,
+    $color-secondary-light
+  );
 }
 
 .active {
   color: $color-primary;
-  background-image: linear-gradient(to right, $color-secondary-dark, $color-secondary-light);
+  background-image: linear-gradient(
+    to right,
+    $color-secondary-dark,
+    $color-secondary-light
+  );
   transform: scale(1.01);
   border: 1px solid $color-primary;
 }
@@ -36,8 +48,6 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-
-
 
 .slides {
   position: relative;
@@ -55,20 +65,17 @@
     color: $color-secondary;
     float: left;
     overflow: hidden;
-    
-    transition: max-height 0.25s       ease-in-out,
-                width      0.25s 0.25s ease-in-out,
-                left       0.25s 0.5s  ease-in-out,
-                top        0.25s 0.75s ease-in-out;
-    
+
+    transition: max-height 0.25s ease-in-out, width 0.25s 0.25s ease-in-out,
+      left 0.25s 0.5s ease-in-out, top 0.25s 0.75s ease-in-out;
+
     // This is probably the jankiest part
     @for $i from 1 through 3 {
       &:nth-child(#{$i}) {
         left: #{($i - 1) * 33.3333%};
       }
     }
- 
-    
+
     > a {
       display: block;
       padding-bottom: 1em;
@@ -82,7 +89,7 @@
       height: 50%;
     }
   }
-  
+
   .slide.active {
     position: absolute;
     top: 8em;
@@ -92,13 +99,13 @@
     max-height: 150vh;
     // max-height: 20em;
     float: none;
-    
-    transition: top        0.25s 1s    ease-in-out,
-                left       0.25s 1.25s ease-in-out,
-                width      0.25s 1.5s  ease-in-out,
-                max-height 0.25s 1.75s ease-in-out;
-    
-    a { color: $color-secondary-dark; }
+
+    transition: top 0.25s 1s ease-in-out, left 0.25s 1.25s ease-in-out,
+      width 0.25s 1.5s ease-in-out, max-height 0.25s 1.75s ease-in-out;
+
+    a {
+      color: $color-secondary-dark;
+    }
   }
 }
 
@@ -113,12 +120,12 @@
  */
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .cf:after {
-    clear: both;
+  clear: both;
 }
 
 /**
@@ -126,5 +133,5 @@
  * Include this rule to trigger hasLayout and contain floats.
  */
 .cf {
-    *zoom: 1;
+  *zoom: 1;
 }
