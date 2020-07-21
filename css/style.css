@@ -154,7 +154,7 @@ body {
     animation: moveInRight 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: .5rem; } }
+        letter-spacing: 0.5rem; } }
   .heading-primary-neg {
     background-image: linear-gradient(to right, #f8d032, #fbe177); }
 
@@ -166,8 +166,8 @@ body {
   background-image: linear-gradient(to right, #292826, #5d5950);
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .2rem;
-  transition: all .2s; }
+  letter-spacing: 0.2rem;
+  transition: all 0.2s; }
   @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
