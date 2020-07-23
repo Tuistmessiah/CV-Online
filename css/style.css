@@ -1329,7 +1329,8 @@ body {
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 5% 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 70%, 5% 100%); } }
+      clip-path: polygon(0 0, 100% 0, 100% 70%, 5% 100%);
+      height: 90vh; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(251, 225, 119, 0.8), rgba(255, 174, 23, 0.8)), url(../img/bgHeader.jpg); } }
@@ -1479,10 +1480,15 @@ body {
   top: 0;
   transform: rotate(-135deg); }
 
+.section-projects {
+  margin-top: 5vh;
+  margin-bottom: 1rem;
+  color: #fbe177; }
+
 .section-about {
   color: #fbe177;
   padding: 0rem 5rem;
-  margin-top: -4vh; }
+  margin-top: 5rem; }
   @media only screen and (max-width: 56.25em) {
     .section-about {
       padding: 0rem 5rem; } }
@@ -1531,11 +1537,6 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-experience {
       padding: 10rem 0; } }
-
-.section-projects {
-  margin-top: 5rem;
-  margin-bottom: 1rem;
-  color: #fbe177; }
 
 .circle-row {
   position: relative;
