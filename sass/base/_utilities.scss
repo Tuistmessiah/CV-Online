@@ -269,3 +269,8 @@
 .svg-icons {
   height: 20px;
 }
+
+// ----- Width
+.u-width-small {
+  width: calc((100% - 4rem));
+}
